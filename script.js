@@ -41,6 +41,11 @@ function highlight(strings, ...values) {
   );
 }
 
-const STR = highlight`Halo, nama saya ${NAMA}, saya ${UMUR} tahun. Dan email saya adalah ${EMAIL}.`;
+const STR = highlight`Halo, nama saya ${NAMA}, saya ${UMUR} tahun. Dan email saya adalah ${EMAIL}. `;
 // console.log(STR);
 document.body.innerHTML = STR;
+
+//FUNGSI TAGGED TEMPLATE
+// - escaping HTML Tags = sanitize html tag, menetralisir code inputan dari user yang dapat mengacaukan code. refrensi = https://codeburst.io/javascript-es6-tagged-template-literals-a45c26e54761
+// - translation & internationalization = mengubha bahasa dari website. referensi = https://codeburst.io/javascript-es6-tagged-template-literals-a45c26e54761
+// - styled Components (bisanya digunakan viu / react) = https://styled-components.com/docs/basics#getting-started
